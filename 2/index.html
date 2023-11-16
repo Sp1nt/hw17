@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="GET">
+            <div class="block-form">
+                <h2 class="title-form">Step 1: Your details</h2>
+                <div class="content-item">
+                    <label class="label-form" for="fullname">Name</label>
+                    <input class="input-form" type="text" name="fullname" id="fullname"
+                        placeholder="First and last name" pattern="^[\w]+ [\w]+$" required>
+                </div>
+                <div class="content-item">
+                    <label class="label-form" for="email">Email</label>
+                    <input class="input-form" type="email" name="email" id="email"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" placeholder="example@domain.com"
+                        required>
+                </div>
+                <div class="content-item">
+                    <label class="label-form" for="phone">Phone</label>
+                    <input class="input-form" type="number" name="phone" id="phone" pattern="^\+\d{11}$"
+                        placeholder="Eg. +47863474537" required>
+                </div>
+
+                <div class="block-form">
+                    <h2 class="title-form">Step 2: Delivery address</h2>
+                    <div class="content-item ">
+                        <label class="label-form" for="address">Address</label>
+                        <textarea class="address-form" name="address" id="address" required></textarea>
+                    </div>
+                    <div class="content-item">
+                        <label class="label-form" for="postCode">Post code</label>
+                        <input class="input-form" type="number" name="postCode" id="postCode" required>
+                    </div>
+                    <div class="content-item">
+                        <label class="label-form" for="country">Country</label>
+                        <input class="input-form" type="text" name="country" id="country" pattern="[a-zA-z]{2,15}"
+                            required>
+                    </div>
+                </div>
+                <div class="block-form">
+                    <h2 class="title-form">Step 3: Card details</h2>
+                    <div class="content-item wrapper-card">
+                        <div class="block-text-form">
+                            <p>Card type</p>
+                        </div>
+                        <div class="wrapper-card-select">
+                            <input type="radio" name="cardType" id="cardVisa" checked>
+                            <label for="cardVisa"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Old_Visa_Logo.svg/120px-Old_Visa_Logo.svg.png"
+                                    alt="">
+                                <p>Visa</p>
+                            </label>
+
+                            <input type="radio" name="cardType" id="cardAmEx">
+                            <label for="cardAmEx"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/120px-American_Express_logo_%282018%29.svg.png"
+                                    alt="">
+                                <p>AmEx</p>
+                            </label>
+
+                            <input type="radio" name="cardType" id="cardMastercard">
+                            <label for="cardMastercard"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/772px-Mastercard-logo.svg.png"
+                                    alt="">
+                                <p>Mastercard</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="content-item">
+                        <label class="label-form" for="cardNumber">Card number</label>
+                        <input class="input-form" type="number" name="cardNumber" id="cardNumber" required>
+                    </div>
+                    <div class="content-item">
+                        <label class="label-form" for="securityCode">Security code</label>
+                        <input class="input-form" type="number" name="securityCode" id="securityCode" required>
+                    </div>
+                    <div class="content-item">
+                        <label class="label-form" for="nameOnCard">Name on card</label>
+                        <input class="input-form" type="text" name="nameOnCard" id="nameOnCard" pattern="[a-zA-z]{2,25}"
+                            placeholder="Exact name as on the card" required>
+                    </div>
+                </div>
+                <input class="button-form" type="submit" value="BUY IT!">
+        </form>
+    </div>
+</body>
+
+</html>

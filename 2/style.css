@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+form {
+    padding: 15px;
+
+    border-radius: 15px;
+    background-color: #90ad1d;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.block-form {
+    margin-top: 25px;
+}
+.title-form {
+    margin: 25px auto;
+
+    color: #2e3a0f;
+}
+.content-item {
+    display: flex;
+    align-items: center;
+
+    padding:  10px;
+
+    border: 2px solid #ffffffa9;
+    border-radius: 5px;
+    background-color: #ffffff5b;
+}
+
+.content-item:not(:last-child){
+    margin-bottom: 5px;
+}
+
+
+
+.wrapper-card {
+    flex-direction: column;
+}
+.block-text-form{
+    margin-right: 80%;
+    margin-bottom: 10px;
+}
+
+.address-form {
+    border: none;
+    padding: 5px;
+    min-width: 215px;
+    max-width: 215px;
+    max-height: 120px;
+    border-radius: 5px;
+}
+
+
+.label-form {
+    width: 120px;
+}
+.input-form {
+    padding: 12px;
+    width: 55%;
+    border-radius: 5px;
+    border: none;
+}
+
+.wrapper-card-select {
+    display: flex;
+    align-items: center;
+
+}
+.wrapper-card-select img {
+    margin-right: 10px;
+    margin-left: 5px;
+    max-width: 35px;
+}
+.wrapper-card-select label {
+    display: flex;
+}
+.wrapper-card-select label:not(:last-child) {
+    margin-right: 25px;
+}
+
+.button-form {
+    display: block;
+    margin: auto;
+    border: none;
+    font-size: 18px;
+
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 10px 45px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #414921;
+    transition: 0.5s ease;
+}
+.button-form:hover {
+
+    background-color: #556711;
+}
+
+
+    
